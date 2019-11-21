@@ -150,6 +150,11 @@ qsiMF = Pm/100;
 Mp_freq = exp((-pi*qsiMF)/(sqrt(1-(qsiMF^2))));     % pico
 tp_freq = pi/(WnMF*sqrt(1-(qsiMF^2)));              % tempo de pico
 
+% requisitos
+MP_req_freq = 0.1;
+
+qsi_proj_freq = abs(log(MP_req_freq))/sqrt((pi^2)+abs(log(MP_req_freq)));
+
 
 
 

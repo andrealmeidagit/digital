@@ -153,8 +153,8 @@ tp_freq = pi/(WnMF*sqrt(1-(qsiMF^2)));              % tempo de pico
 % requisitos
 MP_req_freq = 0.1;
 
-qsi_proj_freq = abs(log(MP_req_freq))/sqrt();
-
+qsi_proj_freq = abs(log(MP_req_freq))/sqrt((pi^2)+(abs(log(MP_req_freq))^2));
+Pm_proj = 100*qsi_proj_freq
 
 
 
